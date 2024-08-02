@@ -1,0 +1,55 @@
+@import '@theme/variables.scss';
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: $m-s;
+    height: 45px;
+    background-color: $c-prim-3;
+    color: $c-white;
+    font-size: $f-default;
+    padding: 0 $m-l;
+    border: none;
+    border-radius: $b-radius;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+        background-color: $c-prim-4;
+    }
+}
+
+.btnSec {
+    background-color: $c-gray-5;
+}
+
+.btnGood {
+    background-color: $c-good-4;
+
+    &:hover {
+        background-color: $c-good-5;
+    }
+}
+
+.btnWarn {
+    background-color: $c-warn-4;
+    color: $c-black;
+
+    &:hover {
+        background-color: $c-warn-5;
+    }
+}
+
+.btnWrong {
+    background-color: $c-gray-5;
+
+    &:hover {
+        background-color: $c-wrong-4;
+    }
+}
+
+.btnBig {
+    gap: $m-m;
+    height: 55px;
+    padding: 0 $m-xl;
+}
