@@ -31,6 +31,15 @@
     }
 }
 
+.btnWarn {
+    background-color: $c-warn-4;
+    color: $c-black;
+
+    &:hover {
+        background-color: $c-warn-5;
+    }
+}
+
 .btnBig {
     gap: $m-m;
     height: 55px;
