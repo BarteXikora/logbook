@@ -20,7 +20,7 @@
 }
 
 .btnSec {
-    background-color: $c-gray-4;
+    background-color: $c-gray-5;
 }
 
 .btnGood {
@@ -37,6 +37,14 @@
 
     &:hover {
         background-color: $c-warn-5;
+    }
+}
+
+.btnWrong {
+    background-color: $c-gray-5;
+
+    &:hover {
+        background-color: $c-wrong-4;
     }
 }
 

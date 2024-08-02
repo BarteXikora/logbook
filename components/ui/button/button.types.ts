@@ -1,6 +1,6 @@
 import { MouseEvent } from 'react'
 
-export type ButtonVariant = 'prim' | 'sec' | 'good' | 'warn'
+export type ButtonVariant = 'prim' | 'sec' | 'good' | 'warn' | 'wrong'
 
 export type ButtonSize = 'def' | 'big'
 
