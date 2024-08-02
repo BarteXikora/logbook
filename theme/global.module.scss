@@ -1,0 +1,52 @@
+@import './variables.scss';
+
+.root {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    ::selection {
+        background-color: $c-prim-4;
+        color: $c-white;
+    }
+
+    font-family: $ff-sans;
+    font-size: $f-default;
+    background-color: $c-gray-5;
+    color: $c-white;
+
+    h1 {
+        font-family: $ff-display;
+        font-size: $f-title;
+        font-weight: 700;
+        margin-top: $m-s;
+        margin-bottom: $m-m;
+    }
+
+    h2 {
+        font-family: $ff-display;
+        font-size: $f-subtitle;
+        font-weight: 700;
+        margin-top: $m-xs;
+        margin-bottom: $m-s;
+    }
+
+    h3 {
+        font-size: $f-big;
+        font-weight: 400;
+        margin-top: $m-xs;
+        margin-bottom: $m-s;
+    }
+
+    a {
+        color: $c-prim-2;
+        text-decoration: none;
+        transition: $transition;
+
+        &:hover {
+            color: $c-prim-3;
+        }
+    }
+}
