@@ -1,0 +1,34 @@
+@import '@theme/variables.scss';
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: $m-s;
+    height: 45px;
+    background-color: $c-prim-3;
+    color: $c-white;
+    font-size: $f-default;
+    padding: 0 $m-l;
+    border: none;
+    border-radius: $b-radius;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+        background-color: $c-prim-4;
+    }
+}
+
+.btnSec {
+    background-color: $c-gray-4;
+
+    &:hover {
+        background-color: $c-gray-5;
+    }
+}
+
+.btnBig {
+    gap: $m-m;
+    height: 55px;
+    padding: 0 $m-xl;
+}
