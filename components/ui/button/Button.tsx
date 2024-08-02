@@ -6,7 +6,7 @@ import style from './button.module.scss'
 
 import Image from 'next/image'
 
-const Button = ({ text, $icon, $showArrow, onClick, $variant, $size }: ButtonProps) => {
+const Button = ({ text, $icon, $showArrow, onClick, $variant, $size, type }: ButtonProps) => {
     const getBtnClasses = () => {
         let newClasses = style.btn
 
@@ -28,7 +28,7 @@ const Button = ({ text, $icon, $showArrow, onClick, $variant, $size }: ButtonPro
     useEffect(() => setBtnClasses(getBtnClasses()), [$variant, $size])
 
     return (
-        <button className={btnClasses} onClick={onClick}>
+        <button className={btnClasses} onClick={onClick} type={type || 'button'}>
             {
                 $icon && <Image src={$icon} width={25} height={25} alt='Ikona przycisku' />
             }
