@@ -11,7 +11,8 @@ const Button = ({ text, $icon, $showArrow, onClick, $variant, $size }: ButtonPro
         let newClasses = style.btn
 
         switch ($variant) {
-            case 'sec': newClasses += ' ' + style.btnSec
+            case 'sec': newClasses += ' ' + style.btnSec; break
+            case 'good': newClasses += ' ' + style.btnGood; break
         }
 
         if ($size === 'big') newClasses += ' ' + style.btnBig

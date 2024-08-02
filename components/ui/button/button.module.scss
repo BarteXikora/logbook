@@ -21,9 +21,13 @@
 
 .btnSec {
     background-color: $c-gray-4;
+}
+
+.btnGood {
+    background-color: $c-good-4;
 
     &:hover {
-        background-color: $c-gray-5;
+        background-color: $c-good-5;
     }
 }
 
