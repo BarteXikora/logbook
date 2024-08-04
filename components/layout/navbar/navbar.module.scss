@@ -1,0 +1,48 @@
+@import '@theme/variables.scss';
+
+.navbar {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $c-black;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: $m-xl;
+
+    nav {
+        display: flex;
+        gap: $m-xl;
+
+        a {
+            color: $c-white;
+        }
+    }
+}
+
+.logo {
+    button {
+        padding: 0 !important;
+        background-color: $c-black;
+
+        &:hover {
+            background-color: $c-prim-5;
+        }
+    }
+
+    img {
+        width: 195px !important;
+        height: auto;
+    }
+}
+
+.btnUser button {
+    background-color: $c-black;
+
+    &:hover {
+        background-color: $c-prim-5;
+    }
+}
