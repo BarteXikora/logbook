@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import Button from '@components/ui/button/Button'
 
@@ -7,21 +6,21 @@ import style from './navbar.module.scss'
 const Navbar = () => {
     return (
         <header className={style.navbar}>
-            <div className={style.navigation}>
-                <div className={style.logo}>
-                    <Button text='' $icon='/img/logo.svg' $variant='sec' $size='big' />
-                </div>
+            <div className={style.logo}>
+                <Button text='' $icon='/img/logo.svg' $variant='sec' $size='big' />
+            </div>
 
-                <nav>
+            <nav className={style.navigation}>
+                <div className={style.navLinks}>
                     <Link href='/'>Pulpit</Link>
                     <Link href='/'>Kalendarz</Link>
                     <Link href='/'>Wpisy</Link>
-                </nav>
-            </div>
+                </div>
 
-            <div className={style.btnUser}>
-                <Button $variant='sec' text='Nazwa użytkownika' $icon='/icons/user.svg' $size='big' $showArrow />
-            </div>
+                <div className={style.userBtn}>
+                    <Button $variant='sec' text='Nazwa użytkownika' $icon='/icons/user.svg' $size='big' $showArrow />
+                </div>
+            </nav>
         </header>
     )
 }
