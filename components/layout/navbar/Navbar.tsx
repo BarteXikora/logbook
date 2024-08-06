@@ -11,6 +11,10 @@ const Navbar = () => {
             </div>
 
             <nav className={style.navigation}>
+                <div className={style.hamburgerBtn}>
+                    <Button text='' $icon='/icons/hamburger.svg' $size='big' />
+                </div>
+
                 <div className={style.navLinks}>
                     <Link href='/'>Pulpit</Link>
                     <Link href='/'>Kalendarz</Link>

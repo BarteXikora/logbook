@@ -31,6 +31,10 @@
     width: 100%;
 }
 
+.hamburgerBtn {
+    display: none;
+}
+
 .navLinks {
     display: flex;
     gap: $m-xl;
@@ -50,5 +54,31 @@
 
     &:hover {
         background-color: $c-gray-4;
+    }
+}
+
+@media screen and (max-width: $bp-m) {
+    .navigation {
+        justify-content: end;
+    }
+
+    .hamburgerBtn {
+        display: flex;
+
+        button {
+            background-color: $c-black;
+
+            &:hover {
+                background-color: $c-gray-4;
+            }
+        }
+    }
+
+    .navLinks {
+        display: none;
+    }
+
+    .userBtn {
+        display: none;
     }
 }
