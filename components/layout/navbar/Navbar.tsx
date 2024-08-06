@@ -4,6 +4,8 @@ import Button from '@components/ui/button/Button'
 import style from './navbar.module.scss'
 
 const Navbar = () => {
+    const __isAddedToday = false
+
     return (
         <header className={style.navbar}>
             <div className={style.logo}>
@@ -19,6 +21,10 @@ const Navbar = () => {
                     <Link href='/'>Pulpit</Link>
                     <Link href='/'>Kalendarz</Link>
                     <Link href='/'>Wpisy</Link>
+
+                    {
+                        !__isAddedToday && <Button $variant='sec' text='Dodaj dzisiejszy wpis' />
+                    }
                 </div>
 
                 <div className={style.userBtn}>
