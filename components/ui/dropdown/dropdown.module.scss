@@ -1,0 +1,15 @@
+@import '@theme/variables.scss';
+
+.dropdownContainer {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdownContent {
+    position: absolute;
+    background-color: $c-black;
+    top: 60px;
+    padding: $m-m $m-l;
+    border-radius: $b-radius;
+    border: $b-default;
+}
