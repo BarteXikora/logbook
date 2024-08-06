@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import Button from '@components/ui/button/Button'
 
+import Logo from './logo/Logo'
+
 import style from './navbar.module.scss'
 
 const Navbar = () => {
@@ -8,9 +10,7 @@ const Navbar = () => {
 
     return (
         <header className={style.navbar}>
-            <div className={style.logo}>
-                <Button text='' $icon='/img/logo.svg' $variant='sec' $size='big' />
-            </div>
+            <Logo />
 
             <nav className={style.navigation}>
                 <div className={style.hamburgerBtn}>

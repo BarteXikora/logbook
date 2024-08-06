@@ -8,22 +8,6 @@
     background-color: $c-black;
 }
 
-.logo {
-    button {
-        padding: 0 !important;
-        background-color: $c-black;
-
-        &:hover {
-            background-color: $c-gray-4;
-        }
-    }
-
-    img {
-        width: 195px !important;
-        height: auto;
-    }
-}
-
 .navigation {
     display: flex;
     justify-content: space-between;
