@@ -27,7 +27,12 @@ const Dropdown = ({ button, content, className }: DropdownProps) => {
             />
 
             {
-                isOpen && <div className={style.dropdownContent}>{content}</div>
+                isOpen && <div
+                    className={style.dropdownContent}
+                    onClick={() => setIsOpen(false)}
+                >
+                    {content}
+                </div>
             }
         </div>
     )
