@@ -1,0 +1,23 @@
+@import '@theme/variables.scss';
+
+.editorPaperContainer {
+    display: flex;
+    justify-content: center;
+    min-height: 100%;
+    box-sizing: border-box;
+    margin-top: calc(3.438rem + 4.613rem);
+}
+
+.editorPaper {
+    position: relative;
+    background-color: $c-gray-1;
+    border-radius: $b-radius;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    color: $c-black;
+    margin-top: $m-l;
+    width: 75rem;
+    padding: $m-xl $m-xxl;
+    box-sizing: border-box;
+    min-height: calc(100% - $m-xl);
+}
