@@ -1,5 +1,15 @@
 @import '@theme/variables.scss';
 
-.editorContainer {
-    padding: $m-m $m-xl;
+.editorToolsContainer {
+    position: fixed;
+    top: 3.438rem;
+    width: 100%;
+    padding: $m-m $m-xl 0 $m-xl;
+    background-color: $c-gray-5;
+    z-index: 8000;
+    box-sizing: border-box;
+}
+
+.editorPaperContainer {
+    height: calc(100svh - 3.438rem - 4.613rem);
 }
