@@ -1,9 +1,12 @@
 @import '@theme/variables.scss';
 
 .navbar {
-    position: sticky;
+    position: fixed;
+    width: 100%;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: $c-black;
+    z-index: 10000;
 }
