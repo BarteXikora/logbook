@@ -4,6 +4,6 @@ export type ElementState = { value: string, setValue: (value: string) => void }
 
 type ReplaceContentWithSate<T> = T extends { content: string } ? Omit<T, 'content'> & { state: ElementState } : T
 
-type Element = ReplaceContentWithSate<StoredElement>
+type Element = ReplaceContentWithSate<StoredElement> & { nextElement: () => void }
 
 export default Element
