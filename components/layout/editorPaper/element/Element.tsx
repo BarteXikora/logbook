@@ -1,4 +1,4 @@
-import { FocusEvent } from 'react'
+import { FocusEvent, KeyboardEvent } from 'react'
 import ElementProps from './element.types'
 import style from './element.module.scss'
 
@@ -27,11 +27,20 @@ const Element = (element: ElementProps) => {
         state.setValue(e.currentTarget.innerHTML)
     }
 
+    const handleEnter = (e: KeyboardEvent) => {
+        if (!e.shiftKey && e.key === 'Enter') {
+            e.preventDefault()
+
+            state.setValue(e.currentTarget.innerHTML)
+            element.nextElement()
+        }
+    }
+
     return (
         <div
             contentEditable suppressContentEditableWarning
             className={`${style.elementInput} ${style['elementType-' + type]} ${style['elementAlign-' + alignment]}`}
-            onBlur={handleBlur}
+            onBlur={handleBlur} onKeyDown={handleEnter}
             dangerouslySetInnerHTML={{ __html: state.value }}
         />
     )
