@@ -1,28 +1,5 @@
 @import '@theme/variables.scss';
 
-// .elementInput {
-//     width: 100%;
-//     padding: $m-s $m-xl;
-//     border: 0;
-//     border-radius: $b-radius;
-//     color: $c-black;
-//     background-color: transparent;
-//     box-sizing: border-box;
-//     height: auto;
-//     field-sizing: content;
-//     resize: none;
-//     transition: $transition;
-
-//     &:hover {
-//         background-color: $c-gray-2;
-//     }
-
-//     &:focus {
-//         background-color: $c-white;
-//         outline: $b-default
-//     }
-// }
-
 .elementInput {
     padding: $m-s $m-xl;
     border-radius: $b-radius;
@@ -78,4 +55,13 @@
 
 .elementAlign-justify {
     text-align: justify;
+}
+
+.separator {
+    border: 0;
+    width: 40%;
+    height: .188rem;
+    margin: $m-xl auto;
+    background-color: $c-gray-3;
+    border-radius: $b-radius;
 }
