@@ -15,26 +15,26 @@ const EditorTools = () => {
 
             <div className={style.mainTools}>
                 <div className={style.group}>
-                    <ToolButton icon='/icons/heading-1.svg' isActive={true} onClick={() => { }} />
-                    <ToolButton icon='/icons/heading-2.svg' isActive={false} onClick={() => { }} />
-                    <ToolButton icon='/icons/heading-3.svg' isActive={false} onClick={() => { }} />
-                    <ToolButton icon='/icons/text.svg' isActive={false} onClick={() => { }} />
+                    <ToolButton icon='/icons/heading-1.svg' doNotBlur isActive={true} onClick={() => { }} />
+                    <ToolButton icon='/icons/heading-2.svg' doNotBlur isActive={false} onClick={() => { }} />
+                    <ToolButton icon='/icons/heading-3.svg' doNotBlur isActive={false} onClick={() => { }} />
+                    <ToolButton icon='/icons/text.svg' doNotBlur isActive={false} onClick={() => { }} />
                     <ToolButton icon='/icons/quote.svg' isActive={false} onClick={() => { }} />
                     <ToolButton icon='/icons/separator.svg' isActive={false} onClick={() => { }} />
                 </div>
 
                 <div className={style.group}>
-                    <ToolButton icon='/icons/bold.svg' isActive={false} onClick={() => { }} />
-                    <ToolButton icon='/icons/italic.svg' isActive={false} onClick={() => { }} />
-                    <ToolButton icon='/icons/underline.svg' isActive={false} onClick={() => { }} />
-                    <ToolButton icon='/icons/line-through.svg' isActive={false} onClick={() => { }} />
+                    <ToolButton icon='/icons/bold.svg' doNotBlur isActive={false} onClick={() => { }} />
+                    <ToolButton icon='/icons/italic.svg' doNotBlur isActive={false} onClick={() => { }} />
+                    <ToolButton icon='/icons/underline.svg' doNotBlur isActive={false} onClick={() => { }} />
+                    <ToolButton icon='/icons/line-through.svg' doNotBlur isActive={false} onClick={() => { }} />
                 </div>
 
                 <div className={style.group}>
-                    <ToolButton icon='/icons/align-left.svg' isActive={true} onClick={() => { }} />
-                    <ToolButton icon='/icons/align-center.svg' isActive={false} onClick={() => { }} />
-                    <ToolButton icon='/icons/align-right.svg' isActive={false} onClick={() => { }} />
-                    <ToolButton icon='/icons/align-justify.svg' isActive={false} onClick={() => { }} />
+                    <ToolButton icon='/icons/align-left.svg' doNotBlur isActive={true} onClick={() => { }} />
+                    <ToolButton icon='/icons/align-center.svg' doNotBlur isActive={false} onClick={() => { }} />
+                    <ToolButton icon='/icons/align-right.svg' doNotBlur isActive={false} onClick={() => { }} />
+                    <ToolButton icon='/icons/align-justify.svg' doNotBlur isActive={false} onClick={() => { }} />
                 </div>
             </div>
 
