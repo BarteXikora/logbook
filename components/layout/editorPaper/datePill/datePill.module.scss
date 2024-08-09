@@ -1,0 +1,14 @@
+@import '@theme/variables.scss';
+
+.datePillContainer {
+    padding: $m-l $m-xl $m-s;
+}
+
+.datePill {
+    display: inline-block;
+    padding: $m-xs $m-xl;
+    background-color: $c-prim-4;
+    border-radius: $b-radius;
+    color: $c-white;
+    font-weight: bold;
+}
