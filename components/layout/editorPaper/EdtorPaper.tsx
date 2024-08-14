@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { RootState } from '@store/store'
-import { addElement, editElement } from '@store/editorSlice/editorSlice'
+import { addElement, editElement, removeElement } from '@store/editorSlice/editorSlice'
 import ElementProps from './element/element.types'
 
 import DatePill from './datePill/DatePill'
@@ -43,6 +43,12 @@ const EdtorPaper = () => {
         dispatch(addElement(position))
     }
 
+    const handleRemoveElement = (position: number) => {
+        if (position === 0) return
+
+        dispatch(removeElement(position))
+    }
+
     return (
         <div className={style.editorPaperContainer}>
             <main className={style.editorPaper}>
@@ -56,11 +62,12 @@ const EdtorPaper = () => {
                             elementProps = {
                                 ...element,
                                 state: { value: element.content, setValue: (value: string) => handleSetValue(n, value) },
-                                nextElement: () => handleNextElement(n)
+                                nextElement: () => handleNextElement(n),
+                                removeElement: () => handleRemoveElement(n)
                             }
 
                         else
-                            elementProps = { ...element, nextElement: () => handleNextElement(n) }
+                            elementProps = { ...element, nextElement: () => handleNextElement(n), removeElement: () => handleNextElement(n) }
 
                         return (
                             <Element key={n} {...elementProps} />
