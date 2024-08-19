@@ -11,7 +11,7 @@ import Element from './element/Element'
 import style from './editorPaper.module.scss'
 import useManageSelection from '@hooks/useManageSelection/useManageSelection'
 
-const EdtorPaper = () => {
+const EditorPaper = () => {
     const dispatch = useDispatch()
     const { date, content } = useSelector((state: RootState) => state)
 
@@ -67,4 +67,4 @@ const EdtorPaper = () => {
     )
 }
 
-export default EdtorPaper
+export default EditorPaper

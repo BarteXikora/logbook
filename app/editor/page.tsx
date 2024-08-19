@@ -1,5 +1,5 @@
 import EditorTools from '@components/layout/editorTools/EditorTools'
-import EditorPaper from '@components/layout/editorPaper/EdtorPaper'
+import EditorPaper from '@components/layout/editorPaper/EditorPaper'
 
 import style from './page.module.scss'
 
