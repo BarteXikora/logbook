@@ -54,7 +54,7 @@ const EdtorPaper = () => {
                                 }
 
                             else
-                                elementProps = { ...element, nextElement: () => handleNextElement(n), removeElement: () => handleNextElement(n) }
+                                elementProps = { ...element, nextElement: () => handleNextElement(n), removeElement: () => handleRemoveElement(n) }
 
                             return (
                                 <Element key={n} {...elementProps} />
