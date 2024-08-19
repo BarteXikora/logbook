@@ -1,5 +1,5 @@
-import { FocusEvent, KeyboardEvent } from 'react'
 import ElementProps from './element.types'
+import TextElement from './textElement/TextElement'
 import style from './element.module.scss'
 
 const Element = (element: ElementProps) => {
@@ -13,37 +13,7 @@ const Element = (element: ElementProps) => {
     if (type === 'quote') return <>quote</>
     //
 
-    const { state, alignment } = element
-
-    const handleBlur = (e: FocusEvent) => {
-        const relatedTarget = e.relatedTarget as HTMLElement
-        const currentTarget = e.currentTarget as HTMLElement
-
-        if (relatedTarget && relatedTarget.dataset.donotblur) {
-            e.preventDefault()
-            currentTarget.focus()
-        }
-
-        state.setValue(e.currentTarget.innerHTML)
-    }
-
-    const handleEnter = (e: KeyboardEvent) => {
-        if (!e.shiftKey && e.key === 'Enter') {
-            e.preventDefault()
-
-            state.setValue(e.currentTarget.innerHTML)
-            element.nextElement()
-        }
-    }
-
-    return (
-        <div
-            contentEditable suppressContentEditableWarning
-            className={`${style.elementInput} ${style['elementType-' + type]} ${style['elementAlign-' + alignment]}`}
-            onBlur={handleBlur} onKeyDown={handleEnter}
-            dangerouslySetInnerHTML={{ __html: state.value }}
-        />
-    )
+    return <TextElement {...element} />
 }
 
 export default Element
