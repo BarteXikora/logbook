@@ -1,4 +1,4 @@
-import { Element as StoredElement } from '@store/editorSlice/editorSlice.types'
+import { Element as StoredElement, Quote, Separator } from '@store/editorSlice/editorSlice.types'
 
 export type ElementState = { value: string, setValue: (value: string) => void }
 
@@ -12,3 +12,5 @@ type Additional = {
 type Element = ReplaceContentWithSate<StoredElement> & Additional
 
 export default Element
+
+export type TextElement = Exclude<Element, Quote | Separator>
