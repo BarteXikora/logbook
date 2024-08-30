@@ -1,0 +1,67 @@
+@import '@theme/variables.scss';
+
+.elementInput {
+    padding: $m-s $m-xl;
+    border-radius: $b-radius;
+    color: $c-black;
+    background-color: transparent;
+    box-sizing: border-box;
+    transition: $transition;
+
+    &:hover {
+        background-color: $c-gray-2;
+    }
+
+    &:focus {
+        background-color: $c-white;
+        outline: $b-default
+    }
+}
+
+.elementType-h1 {
+    font-size: $f-title;
+    font-family: $ff-display;
+    font-weight: bold;
+    padding: $m-l $m-xl;
+}
+
+.elementType-h2 {
+    font-size: $f-subtitle;
+    font-family: $ff-display;
+    font-weight: bold;
+}
+
+.elementType-h3 {
+    font-size: $f-big;
+    font-family: $ff-sans;
+}
+
+.elementType-text {
+    font-size: $f-default;
+    font-family: $ff-sans;
+}
+
+.elementAlign-left {
+    text-align: left;
+}
+
+.elementAlign-center {
+    text-align: center;
+}
+
+.elementAlign-right {
+    text-align: right;
+}
+
+.elementAlign-justify {
+    text-align: justify;
+}
+
+.separator {
+    border: 0;
+    width: 40%;
+    height: .188rem;
+    margin: $m-xl auto;
+    background-color: $c-gray-3;
+    border-radius: $b-radius;
+}

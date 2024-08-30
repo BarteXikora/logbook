@@ -1,0 +1,21 @@
+@import '@theme/variables.scss';
+
+.editorToolsContainer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $c-black;
+    padding: $m-xs $m-l;
+    border-radius: $b-radius;
+}
+
+.mainTools {
+    display: flex;
+    gap: $m-xxl;
+}
+
+.group {
+    display: flex;
+    gap: $m-s;
+}
